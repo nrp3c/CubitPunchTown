@@ -1,16 +1,14 @@
-#include "Entity"
+#include "Entity.h"
 
 #ifndef Player_h
 #define Player_h
 
 using namespace sf;
 
-class Player public Entitiy {
-	private:
-		
-	
+class Player : public Entity {
 	public:
-		player();
+        Player();
 		void look();
+	private:
 };
 #endif

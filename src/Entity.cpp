@@ -2,6 +2,8 @@
 
 using namespace sf;
 
+Entity :: Entity() {}
+
 Entity :: Entity (float x, float y, float s) {
 	position.x = x;
 	position.y = y;
@@ -19,16 +21,16 @@ void Entity::moveUp() {
 void Entity::moveLeft() {
     position.x -= speed;
 }
- 
+
 void Entity::moveRight() {
     position.x += speed;
 }
 
 void Entity::rotate(float rot) {
-	square.rotate(rot);
+
 }
 
-/* 
+/*
 void Entity::update() {
     square.setPosition(position);
 }*/

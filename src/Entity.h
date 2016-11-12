@@ -6,19 +6,21 @@
 using namespace sf;
 
 class Entity {
-	private:
-		Vector2f position;
-		Entity(float, float, float); // X, Y, Speed
-		int health;
-		float speed;
-		RectangleShape square (const Vector2f &size=Vector2f(1, 1));
-
 	public:
+		Entity(float, float, float); // X, Y, Speed
+        Entity();
 		void moveUp();
 		void moveDown();
 		void moveLeft();
 		void moveRight();
 		void rotate(float rot);
+
+	private:
+		Vector2f position;
+		int health;
+		float speed;
+		RectangleShape square (const Vector2f &size=Vector2f(1, 1));
+
 //		void update();
 };
 #endif

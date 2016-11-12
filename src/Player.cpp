@@ -2,6 +2,5 @@
 
 using namespace sf;
 
-	Player::player() {
-		
-	}
+	Player::Player() 
+    {}

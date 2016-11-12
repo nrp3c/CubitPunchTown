@@ -16,8 +16,9 @@ public:
         void stop();
 
 private:
+        void setupInput();
         int getScore();
-        sf::Window window;
+        sf::RenderWindow window;
         sf::Event event;
         int score;
 
