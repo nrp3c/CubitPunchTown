@@ -8,17 +8,15 @@ void CubitGame::setupDisplay()
 
 void CubitGame::runLoop()
 {
-        while(window.pollEvent(event))
+        while (window.isOpen())
         {
-                switch(event.type)
+                // check all the window's events that were triggered since the last iteration of the loop
+                while (window.pollEvent(event))
                 {
-                case sf::Event::Closed:
-                        window.close();
-                        break;
-                default:
-                        break;
+                        // "close requested" event: we close the window
+                        if (event.type == sf::Event::Closed)
+                                window.close();
                 }
-
         }
 }
 

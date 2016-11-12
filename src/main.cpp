@@ -8,6 +8,7 @@
 int main()
 {
         CubitGame game;
+        game.setupDisplay();
         game.runLoop();
 
 

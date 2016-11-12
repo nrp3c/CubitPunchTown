@@ -1,4 +1,8 @@
 #include <SFML/Window.hpp>
+#include "Entity.h"
+#include "Player.h"
+#include "Enemies.h"
+#include "Level.h"
 
 #ifndef CubitGame_h
 #define CubitGame_h
