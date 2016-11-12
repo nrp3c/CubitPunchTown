@@ -17,9 +17,12 @@ Enemies.o: Enemies.cpp
 Player.o: Player.cpp
 		g++ -c "Player.cpp" -o Player.o
 
-sfmlapp: main.o Level.o Entity.o Enemies.o Player.o
+CubitGame.o: CubitGame.cpp
+		g++ -c "CubitGame.cpp" -o CubitGame.o
+
+sfmlapp: main.o Level.o Entity.o Enemies.o Player.o CubitGame.o
 		@echo "** Building the game"
-		g++ -o sfmlapp Player.o main.o Entity.o Enemies.o Level.o $(LIBS)
+		g++ -o sfmlapp CubitGame.o Player.o main.o Entity.o Enemies.o Level.o $(LIBS)
 
 clean:
 		@echo "** Removing object files and executable..."
