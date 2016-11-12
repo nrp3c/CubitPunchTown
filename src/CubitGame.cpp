@@ -13,19 +13,23 @@ void CubitGame::setupDisplay()
 
 void CubitGame::runLoop()
 {
-        Player player1;
-        while(window.pollEvent(event))
-        {
-                sf::Vector2i MousePos = sf::Mouse::getPosition();
-                switch(event.type)
-                {
-                case sf::Event::Closed:
-                        window.close();
-                        break;
-                default:
-                        break;
-                }
 
+        Player player1;
+        while(window.isOpen())
+        {
+                while(window.pollEvent(event))
+                {
+                        sf::Vector2i MousePos = sf::Mouse::getPosition();
+                        switch(event.type)
+                        {
+                        case sf::Event::Closed:
+                                window.close();
+                                break;
+                        default:
+                                break;
+                        }
+
+                }
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))
                         player1.VerticalMovement('W');
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
@@ -40,6 +44,7 @@ void CubitGame::runLoop()
                         stop();
 
                 window.display();
+
         }
 }
 
