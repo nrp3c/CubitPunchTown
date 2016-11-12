@@ -16,6 +16,6 @@ private:
         int getScore();
         int score;
         sf::Clock clock;
-        sf::Window window;
+        sf::RenderWindow window;
         sf::Event event;
 };
