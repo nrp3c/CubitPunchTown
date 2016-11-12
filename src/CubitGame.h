@@ -1,22 +1,21 @@
 #include <SFML/Window.hpp>
 
-#ifndef Game_h
-#define Game_h
+#ifndef CubitGame_h
+#define CubitGame_h
 
 
-Class Game {
+class CubitGame {
 
 public:
-        game();
         void setupDisplay();
         void runLoop();
         void stop();
 
-
 private:
-        void getScore();
+        int getScore();
         sf::Window window;
+        sf::Event event;
         int score;
 
-}
+};
 #endif

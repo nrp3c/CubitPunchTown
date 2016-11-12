@@ -1,4 +1,4 @@
-#include "Entitiy.h"
+#include "Entity.h"
 
 using namespace sf;
 

@@ -3,12 +3,12 @@
 #include "Entity.h"
 #include "Level.h"
 #include "Enemies.h"
-#include "Game.h"
+#include "CubitGame.h"
 
 int main()
 {
-        Game game();
-        game.run();
+        CubitGame game;
+        game.runLoop();
 
         return 0;
 }

@@ -1,8 +1,5 @@
 #include "CubitGame.h"
 
-CubitGame::Game()
-        :score(0)
-{}
 void CubitGame::setupDisplay()
 {
         window.create(sf::VideoMode(800,600), "My Window");
@@ -10,7 +7,7 @@ void CubitGame::setupDisplay()
 }
 
 void CubitGame::runLoop()
-n{
+{
         while(window.pollEvent(event))
         {
                 switch(event.type)
@@ -31,7 +28,7 @@ void CubitGame::stop()
 }
 
 
-void CubitGame::getScore()
+int CubitGame::getScore()
 {
         return score;
 }
