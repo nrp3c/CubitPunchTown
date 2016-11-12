@@ -13,7 +13,6 @@ class Player : public Entity {
 
 	public:
 		Player();
-
 		void punch();
 		void lookAtMouse(RenderWindow);
 

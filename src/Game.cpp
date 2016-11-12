@@ -3,6 +3,7 @@
 CubitGame::CubitGame()
         :score(0)
 {}
+
 void CubitGame::setupDisplay()
 {
         window.create(sf::VideoMode(800,600), "My Window");
@@ -35,7 +36,10 @@ void CubitGame::runLoop()
                         player1.moveRight();
                 if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
                         player1.punch();
+                if(sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
+                        stop();
 
+                window.display();
         }
 }
 

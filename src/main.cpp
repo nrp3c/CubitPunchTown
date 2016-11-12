@@ -11,6 +11,5 @@ int main()
         game.setupDisplay();
         game.runLoop();
 
-
         return 0;
 }
