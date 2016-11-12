@@ -1,6 +1,6 @@
 #include "CubitGame.h"
 
-CubitGame::Game()
+CubitGame::CubitGame()
         :score(0)
 {}
 void CubitGame::setupDisplay()
