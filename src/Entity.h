@@ -18,6 +18,6 @@ class Entity {
 		void moveDown();
 		void moveLeft();
 		void moveRight();
-		void update();
+//		void update();
 };
 #endif

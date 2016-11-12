@@ -24,7 +24,7 @@ void Entity::moveLeft() {
 void Entity::moveRight() {
     position.x += speed;
 }
- 
+/* 
 void Entity::update() {
     square.setPosition(position);
-}
+}*/
