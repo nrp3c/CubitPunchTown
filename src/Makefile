@@ -23,4 +23,4 @@ sfmlapp: main.o Level.o Entity.o Enemies.o Player.o
 
 clean:
 		@echo "** Removing object files and executable..."
-		rm -f thegame *.o
+		rm -f *.o
