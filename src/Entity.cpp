@@ -12,7 +12,6 @@ void Entity::moveDown() {
 	position.y -= speed;
 }
 
-
 void Entity::moveUp() {
 	position.y += speed;
 }
@@ -24,6 +23,11 @@ void Entity::moveLeft() {
 void Entity::moveRight() {
     position.x += speed;
 }
+
+void Entity::rotate(float rot) {
+	square.rotate(rot);
+}
+
 /* 
 void Entity::update() {
     square.setPosition(position);

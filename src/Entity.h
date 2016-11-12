@@ -18,6 +18,7 @@ class Entity {
 		void moveDown();
 		void moveLeft();
 		void moveRight();
+		void rotate(float rot);
 //		void update();
 };
 #endif
