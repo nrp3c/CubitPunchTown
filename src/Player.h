@@ -6,6 +6,7 @@
 using namespace sf;
 
 class Player : public Entity {
+
 	private:
 		float const PI = 3.14159
 	
@@ -13,5 +14,6 @@ class Player : public Entity {
 		player();
 		void punch();
 		void lookAtMouse(RenderWindow);
+
 };
 #endif
