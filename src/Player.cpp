@@ -3,15 +3,15 @@
 using namespace sf;
 
 Player::Player()
-        : PI(3.14359)
+        : PI(3.14159265358979323846264338327950288419716939937510582)
 {}
 
-void Player::punch() {
+void punch() {
 
 }
 
-/*void Player::lookAtMouse(RenderWindow &window) {
-        Vector2f curPos = square.getPosition();
+void lookAtMouse(RenderWindow &window) {
+/*        Vector2f curPos = square.getPosition();
 		Vextor2i position = Mouse::getPosition(window);
 
 		float dx = curPos.x - position.x;
@@ -19,5 +19,5 @@ void Player::punch() {
 
 		float rotation = (atan2(dy, dx)) * 180 / PI;
 
-		square.setRotation(rotation+180);
-        }*/
+		square.setRotation(rotation+180);*/
+}
