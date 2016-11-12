@@ -1,9 +1,10 @@
 #include <SFML/Graphics.hpp>
 
+
 #ifndef Entity_h
 #define Entity_h
 
-using namespace sf;
+
 
 class Entity {
 	public:
@@ -16,10 +17,12 @@ class Entity {
 		void rotate(float rot);
 
 	private:
-		Vector2f position;
+//        sf::Vector2f position;
+//sf::Vector2f position;
 		int health;
 		float speed;
 		RectangleShape square (const Vector2f &size=Vector2f(1, 1));
+
 
 //		void update();
 };
