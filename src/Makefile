@@ -14,12 +14,12 @@ Level.o: Level.cpp
 Enemies.o: Enemies.cpp
 		g++ -c "Enemies.cpp" -o Enemies.o
 
-player.o: player.cpp
-		g++ -c "player.cpp" -o player.o
+Player.o: Player.cpp
+		g++ -c "Player.cpp" -o Player.o
 
-sfmlapp: main.o Level.o Entity.o Enemies.o player.o
+sfmlapp: main.o Level.o Entity.o Enemies.o Player.o
 		@echo "** Building the game"
-		g++ -o sfmlapp player.o main.o Entity.o Enemies.o Level.o $(LIBS)
+		g++ -o sfmlapp Player.o main.o Entity.o Enemies.o Level.o $(LIBS)
 
 clean:
 		@echo "** Removing object files and executable..."
