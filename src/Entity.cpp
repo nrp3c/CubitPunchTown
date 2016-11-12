@@ -26,9 +26,9 @@ void Entity::moveRight() {
     position.x += speed;
 }
 
-void Entity::rotate(float rot) {
+// void Entity::rotate(float rot) {
 
-}
+// }
 
 /*
 void Entity::update() {
