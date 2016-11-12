@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
 
-#iifndef Entity_h
+#ifndef Entity_h
 #define Entity_h
 
 using namespace sf;
@@ -8,7 +8,7 @@ using namespace sf;
 class Entity.h {
 	private:
 		Vector2f position;
-		Entity(float, float, float) // X, Y, Speed
+		Entity(float, float, float); // X, Y, Speed
 		int health;
 		float speed;
 		RectangleShape square (const Vector2f &size=Vector2f(1, 1));
