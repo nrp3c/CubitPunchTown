@@ -8,6 +8,7 @@ public:
 
 private:
         void getScore();
-        
+        sf::Clock clock;
+        sf::Window window
 
 }
