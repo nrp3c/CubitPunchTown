@@ -1,26 +1,21 @@
 #include <SFML/Window.hpp>
 #include "Entity.h"
 #include "Player.h"
-#include "Enemies.h"
 #include "Level.h"
-
-#ifndef CubitGame_h
-#define CubitGame_h
+#include "Enemies.h"
 
 
 class CubitGame {
 
 public:
+        CubitGame();
         void setupDisplay();
         void runLoop();
         void stop();
-
 private:
-        void setupInput();
         int getScore();
-        sf::RenderWindow window;
-        sf::Event event;
         int score;
-
+        sf::Clock clock;
+        sf::Window window;
+        sf::Event event;
 };
-#endif

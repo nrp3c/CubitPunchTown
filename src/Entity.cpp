@@ -10,21 +10,19 @@ Entity :: Entity (float x, float y, float s) {
 	speed = s;
 }
 
-void Entity::moveDown() {
-	position.y -= speed;
+
+void Entity::HorizontalMovement(char AorD)
+{
+
 }
 
-void Entity::moveUp() {
-	position.y += speed;
+void Entity::VerticalMovement(char WorS)
+{
+
 }
 
-void Entity::moveLeft() {
-    position.x -= speed;
-}
 
-void Entity::moveRight() {
-    position.x += speed;
-}
+
 
 // void Entity::rotate(float rot) {
 

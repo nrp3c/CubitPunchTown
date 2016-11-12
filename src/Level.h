@@ -3,8 +3,8 @@
 class Level {
 
 public:
-        generateLevel();
-        clearLevel();
+        void generateLevel();
+        void clearLevel();
 
 private:
         sf::Sprite building1;

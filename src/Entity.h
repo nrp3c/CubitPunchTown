@@ -10,8 +10,8 @@ class Entity {
 	public:
 		Entity(float, float, float); // X, Y, Speed
         Entity();
-void HorizontalMovement(char LorR);
-void VerticalMovement(char LorR);
+        void HorizontalMovement(char LorR);
+        void VerticalMovement(char UorD);
 		void rotate(float rot);
 
 	private:
