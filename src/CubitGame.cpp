@@ -6,7 +6,7 @@ CubitGame::CubitGame()
 
 void CubitGame::setupDisplay()
 {
-        window.create(sf::VideoMode(800,600), "My Window");
+        window.create(sf::VideoMode(800,600), "Penis Butt");
         window.setFramerateLimit(60);
 }
 
@@ -53,5 +53,3 @@ int CubitGame::getScore()
 {
         return score;
 }
-
-

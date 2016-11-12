@@ -3,9 +3,8 @@
 
 int main()
 {
-        CubitGame game;
-        game.setupDisplay();
-        game.runLoop();
+        CubitGame.setupDisplay();
+        CubitGame.runLoop();
 
         return 0;
 }
