@@ -10,11 +10,9 @@ class Entity {
 	public:
 		Entity(float, float, float); // X, Y, Speed
         Entity();
-		void moveUp();
-		void moveDown();
-		void moveLeft();
-		void moveRight();
-//		void rotate(float rot);
+void HorizontalMovement(char LorR);
+void VerticalMovement(char LorR);
+		void rotate(float rot);
 
 	private:
         sf::Vector2f position;

@@ -6,12 +6,12 @@ Player::Player()
         : PI(3.14159265358979323846264338327950288419716939937510582)
 {}
 
-void punch() {
+void Player::punch() {
 
 }
 
-void lookAtMouse(RenderWindow &window) {
-/*        Vector2f curPos = square.getPosition();
+/*void Player::lookAtMouse(RenderWindow &window) {
+        Vector2f curPos = square.getPosition();
 		Vextor2i position = Mouse::getPosition(window);
 
 		float dx = curPos.x - position.x;
@@ -19,5 +19,5 @@ void lookAtMouse(RenderWindow &window) {
 
 		float rotation = (atan2(dy, dx)) * 180 / PI;
 
-		square.setRotation(rotation+180);*/
-}
+		square.setRotation(rotation+180);
+        }*/
