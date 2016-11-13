@@ -46,9 +46,9 @@ void CubitGame::runLoop()
 		// Decelerate every run, clear every old sprite, move based off every key
 		// rotate based off current mouse position, then redraw the sprite
 		player.Decel();
-		window.clear();	
-                player.Move();
+		window.clear();
 		player.lookAtMouse(window);
+        player.Move();
 		window.draw(player.sprite);
 
                 window.display();

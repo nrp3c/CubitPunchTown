@@ -10,16 +10,16 @@ void Player::punch() {
 }
 
 
-void Player::lookAtMouse(sf::RenderWindow &window) {
-     	        curPos = sprite.getPosition();
+void Player::lookAtMouse(sf::RenderWindow &window) 
+{
+
+        curPos = sprite.getPosition();
 		mousePosition = sf::Mouse::getPosition(window);
-		
+
 		dx = curPos.x - mousePosition.x;
 		dy = curPos.y - mousePosition.y;
 
 		rotation = std::atan2(dy, dx) * 180 / PI;
 		sprite.setRotation(rotation);
 
-
-
-        }
+}

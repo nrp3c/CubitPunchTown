@@ -14,7 +14,7 @@ Entity::Entity(float x, float y, float s, std::string TextureFileName) {
   speed = s;
   loadTexture(TextureFileName);
   setupSprite();
-  sprite.setOrigin(16/2, 16/2);
+  sprite.setOrigin(16/2.0f, 16/2.0f);
 }
 
 
