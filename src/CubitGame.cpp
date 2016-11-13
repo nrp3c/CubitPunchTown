@@ -17,6 +17,8 @@ void CubitGame::runLoop()
         Player player1;
         while(window.isOpen())
         {
+                Entity player(5, 5, 1.0, "../assets/player.png");
+                window.draw(player.sprite);
                 while(window.pollEvent(event))
                 {
                         sf::Vector2i MousePos = sf::Mouse::getPosition();

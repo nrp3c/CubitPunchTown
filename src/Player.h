@@ -10,7 +10,10 @@ class Player : public Entity {
 
 	private:
 		float PI;
-
+        sf::Sprite playerSprite;
+        sf::Texture texture;
+        void loadTexture();
+        void setupSprite();
 	public:
 		Player();
 		void punch();
