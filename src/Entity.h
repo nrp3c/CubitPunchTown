@@ -4,6 +4,9 @@
 #ifndef Entity_h
 #define Entity_h
 
+using std::endl;
+using std::cout;
+
 class Entity {
 
 
@@ -18,7 +21,9 @@ class Entity {
         void Move();
         void rotate(float rot);
         sf::Sprite sprite;
+
 private:
+        sf::Image image;
         sf::Vector2f vel;
         sf::Vector2f pos;
         sf::Vector2f position;

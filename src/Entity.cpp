@@ -50,16 +50,20 @@ void Entity::Move(){
 
 void Entity::loadTexture(std::string TextureFileName)
 {
-        if (!texture.loadFromFile(TextureFileName, sf::IntRect(10, 10, 16, 16)))
-        {
-                std::cout << "Texture not found" << std::endl;// error...
-        }
+        if(!texture.create(16,16))
+                cout << "FUCK MY ASS IN THE CUNT" << endl;
+        if(!image.loadFromFile("player.png"))
+                cout << "FUCK MY ASs IN THE DICK" << endl;
+        texture.update(image);
 }
 
 
 void Entity::setupSprite()
 {
+        // who among us can truly load textures? What are textures?
+        // - Nietszche
         sprite.setTexture(texture);
+
 }
 
 

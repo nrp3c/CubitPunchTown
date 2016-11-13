@@ -14,11 +14,11 @@ void CubitGame::setupDisplay()
 void CubitGame::runLoop()
 {
 
-        Player player1;
+        Entity player(5, 5, 1.0, "player.png");
         while(window.isOpen())
         {
-                Entity player(5, 5, 1.0, "../assets/player.png");
                 window.draw(player.sprite);
+
                 while(window.pollEvent(event))
                 {
                         sf::Vector2i MousePos = sf::Mouse::getPosition();
@@ -32,21 +32,20 @@ void CubitGame::runLoop()
                         }
 
                 }
+
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-                        player1.VerticalMovement('W');
+                        player.VerticalMovement('W');
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-                        player1.VerticalMovement('S');
+                        player.VerticalMovement('S');
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-                        player1.HorizontalMovement('A');
+                        player.HorizontalMovement('A');
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-                        player1.HorizontalMovement('D');
-                if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
-                        player1.punch();
+                        player.HorizontalMovement('D');
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
                         stop();
+                player.Move();
 
                 window.display();
-
         }
 }
 
