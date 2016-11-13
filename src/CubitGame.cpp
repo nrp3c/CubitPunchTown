@@ -14,6 +14,18 @@ void CubitGame::setupDisplay()
 void CubitGame::runLoop()
 {
 
+		
+  sf::Texture texture;
+  texture.create(800,600);
+  sf::Image image;
+  image.loadFromFile("assets/background.jpg");
+  texture.update(image);
+  sf::Sprite background; 
+  background.setTexture(texture);
+ // background.setPosition(400,300);
+	
+	
+	
         Player player(5, 5, 5.0, "assets/player.png");
         while(window.isOpen())
         {
@@ -48,7 +60,8 @@ void CubitGame::runLoop()
 		player.Decel();
 		window.clear();
 		player.lookAtMouse(window);
-        player.Move();
+		player.Move();
+		window.draw(background);
 		window.draw(player.sprite);
 
                 window.display();

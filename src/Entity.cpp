@@ -15,6 +15,7 @@ Entity::Entity(float x, float y, float s, std::string TextureFileName) {
   loadTexture(TextureFileName);
   setupSprite();
   sprite.setOrigin(16/2.0f, 16/2.0f);
+
 }
 
 

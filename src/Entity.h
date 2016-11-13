@@ -19,6 +19,7 @@ class Entity {
         void Move();
         void rotate(float rot);
         sf::Sprite sprite;
+	sf::Sprite background;
 
 protected:
         sf::Image image;
