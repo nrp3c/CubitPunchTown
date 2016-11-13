@@ -2,19 +2,15 @@
 
 
 Entity :: Entity()
-	: maxspeed(4.0f)
-	, accel(1.5f)
-	, decel(0.1f)
+        : maxspeed(4.0f), accel(1.5f), decel(0.1f)
 {}
 
-Entity :: Entity (float x, float y, float s) {
-	pos.x = x;
-	pos.y = y;
-Entity::Entity() {}
-
-Entity::Entity (float x, float y, float s, std::string TextureFileName) {
+Entity::Entity(float x, float y, float s, std::string TextureFileName) {
 	position.x = x;
 	position.y = y;
+    maxspeed = 4.0f;
+    accel = 1.5f;
+    decel = 0.1f;
 	speed = s;
     loadTexture(TextureFileName);
     setupSprite();
@@ -38,6 +34,7 @@ void Entity::Decel() {
 	vel.x *= decel;
 	vel.y *= decel;
 }
+
 void Entity::Move(){
 	pos += vel;
 	if(vel.x < -maxspeed)
@@ -64,8 +61,6 @@ void Entity::setupSprite()
 {
         sprite.setTexture(texture);
 }
-
-
 
 
 // void Entity::rotate(float rot) {

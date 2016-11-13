@@ -14,6 +14,9 @@ void Player::punch() {
 
 
 
+
+
+
 /*void Player::lookAtMouse(RenderWindow &window) {
         Vector2f curPos = square.getPosition();
 		Vextor2i position = Mouse::getPosition(window);
