@@ -14,7 +14,7 @@ void CubitGame::setupDisplay()
 void CubitGame::runLoop()
 {
 
-        Entity player(5, 5, 1.0, "player.png");
+        Entity player(5, 5, 1.0, "../assets/player.png");
         while(window.isOpen())
         {
                 window.draw(player.sprite);

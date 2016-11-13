@@ -52,7 +52,7 @@ void Entity::loadTexture(std::string TextureFileName)
 {
         if(!texture.create(16,16))
                 cout << "FUCK MY ASS IN THE CUNT" << endl;
-        if(!image.loadFromFile("player.png"))
+        if(!image.loadFromFile(TextureFileName))
                 cout << "FUCK MY ASs IN THE DICK" << endl;
         texture.update(image);
 }

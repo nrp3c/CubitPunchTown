@@ -2,8 +2,8 @@
 
 using namespace sf;
 
-Player::Player()
-        : PI(3.14159265358979323846264338327950288419716939937510582)
+Player::Player(float x, float y, float speed, std::string TextureFile)
+        : PI(3.14159265358979323846264338327950288419716939937510582)//, Entity(float x, float y, float speed, std::string TextureFile)
 {}
 
 void Player::punch() {

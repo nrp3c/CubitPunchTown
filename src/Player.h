@@ -11,7 +11,7 @@ class Player : public Entity {
 	private:
 		float PI;
 	public:
-		Player();
+		Player(float, float, float, std::string);
 		void punch();
 		void lookAtMouse(RenderWindow);
 
