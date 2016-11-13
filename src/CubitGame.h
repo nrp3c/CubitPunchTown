@@ -1,4 +1,5 @@
 #include <SFML/Window.hpp>
+//#include "../assets/player.png"
 #include "Entity.h"
 #include "Player.h"
 #include "Level.h"
@@ -16,6 +17,6 @@ private:
         int getScore();
         int score;
         sf::Clock clock;
-        sf::Window window;
+        sf::RenderWindow window;
         sf::Event event;
 };

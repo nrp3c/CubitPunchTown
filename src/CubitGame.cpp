@@ -6,26 +6,32 @@ CubitGame::CubitGame()
 
 void CubitGame::setupDisplay()
 {
-        window.create(sf::VideoMode(800,600), "My Window");
+        window.create(sf::VideoMode(800,600), "Penis Butt");
         window.setFramerateLimit(60);
 }
 
 
 void CubitGame::runLoop()
 {
-        Player player1;
-        while(window.pollEvent(event))
-        {
-                sf::Vector2i MousePos = sf::Mouse::getPosition();
-                switch(event.type)
-                {
-                case sf::Event::Closed:
-                        window.close();
-                        break;
-                default:
-                        break;
-                }
 
+        Player player1;
+        while(window.isOpen())
+        {
+                Entity player(5, 5, 1.0, "../assets/player.png");
+                window.draw(player.sprite);
+                while(window.pollEvent(event))
+                {
+                        sf::Vector2i MousePos = sf::Mouse::getPosition();
+                        switch(event.type)
+                        {
+                        case sf::Event::Closed:
+                                window.close();
+                                break;
+                        default:
+                                break;
+                        }
+
+                }
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))
                         player1.VerticalMovement('W');
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
@@ -40,6 +46,7 @@ void CubitGame::runLoop()
                         stop();
 
                 window.display();
+
         }
 }
 
@@ -53,5 +60,3 @@ int CubitGame::getScore()
 {
         return score;
 }
-
-
