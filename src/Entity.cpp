@@ -14,6 +14,7 @@ Entity::Entity(float x, float y, float s, std::string TextureFileName) {
   speed = s;
   loadTexture(TextureFileName);
   setupSprite();
+  sprite.setOrigin(16/2, 16/2);
 }
 
 
@@ -46,6 +47,7 @@ void Entity::Move(){
   if(vel.y >  maxspeed)
     vel.y =  maxspeed;
   sprite.setPosition(pos);
+
 }
 
 void Entity::loadTexture(std::string TextureFileName)

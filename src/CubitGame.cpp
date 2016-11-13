@@ -14,7 +14,7 @@ void CubitGame::setupDisplay()
 void CubitGame::runLoop()
 {
 
-        Entity player(5, 5, 5.0, "assets/player.png");
+        Player player(5, 5, 5.0, "assets/player.png");
         while(window.isOpen())
         {
                 window.draw(player.sprite);
@@ -43,9 +43,12 @@ void CubitGame::runLoop()
                         player.HorizontalMovement('D');
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
                         stop();
+		// Decelerate every run, clear every old sprite, move based off every key
+		// rotate based off current mouse position, then redraw the sprite
 		player.Decel();
 		window.clear();	
                 player.Move();
+		player.lookAtMouse(window);
 		window.draw(player.sprite);
 
                 window.display();
