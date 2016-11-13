@@ -33,8 +33,8 @@ private:
         float accel;
         void loadTexture(std::string TextureFileName);
         void setupSprite();
-		int health;
-		float speed;
+	int health;
+	float speed;
 
-                        };
+};
 #endif
