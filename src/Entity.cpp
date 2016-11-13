@@ -6,8 +6,8 @@ Entity :: Entity()
 {}
 
 Entity::Entity(float x, float y, float s, std::string TextureFileName) {
-	position.x = x;
-	position.y = y;
+	pos.x = x;
+	pos.y = y;
     maxspeed = 4.0f;
     accel = 1.5f;
     decel = 0.1f;
@@ -36,16 +36,16 @@ void Entity::Decel() {
 }
 
 void Entity::Move(){
-	pos += vel;
-	if(vel.x < -maxspeed)
-		vel.x = -maxspeed;
+        pos += vel;
+        if(vel.x < -maxspeed)
+                vel.x = -maxspeed;
         if(vel.x >  maxspeed)
-		vel.x =  maxspeed;
+                vel.x =  maxspeed;
         if(vel.y < -maxspeed)
-		vel.y = -maxspeed;
+                vel.y = -maxspeed;
         if(vel.y >  maxspeed)
-		vel.y =  maxspeed;
-//	entity.setPosition;
+                vel.y =  maxspeed;
+        sprite.setPosition(pos);
 }
 
 void Entity::loadTexture(std::string TextureFileName)
