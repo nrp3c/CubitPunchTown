@@ -1,14 +1,15 @@
 #include <SFML/Graphics.hpp>
 #include <string>
 #include <iostream>
-
-
 #ifndef Entity_h
 #define Entity_h
 
 class Entity {
-public:
 
+
+
+
+	public:
         Entity(float, float, float, std::string); // X, Y, Speed
         Entity();
         void HorizontalMovement(char LorR);
@@ -30,5 +31,5 @@ private:
 		int health;
 		float speed;
 
-};
+                        };
 #endif
